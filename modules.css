@@ -1,0 +1,246 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-height:1000000px;
+}
+
+/* font-family: 'Inconsolata', sans-serif; */
+
+body#mod___body________ {
+  position: static;
+  background: #e0e0e0 !important;
+  padding: 8px 20px 20px 20px;
+}
+
+#mod___body________ .mod___group________ {
+  width: 100%;
+  float: left;
+  padding: 0 10px 10px 10px;
+  margin-top: 16px;
+  overflow: hidden;
+  border: 1px dashed #666;
+}
+
+/* Need to me a little special to avoid CSS conflicts */
+#mod___body________ .mod___box________ {
+  width: 100%;
+  padding: 0;
+  float: left;
+  overflow: hidden;
+  margin-top: -1px;
+  border: 1px dotted #666;
+  /*background: #fff;*/
+
+  /* 100% opacity */
+  /*background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAF0lEQVR4AWP4DwVnoGCgBGAMmMQACQAA9CflgZrq8LsAAAAASUVORK5CYII=) #fff repeat;*/
+
+  /* 50% opacity */
+  /*background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAF0lEQVR4AWP4DwXPoGCgBGAMmMQACQAA3JDygUjBreUAAAAASUVORK5CYII=) #fff repeat;*/
+
+  /* 25% opacity*/
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAF0lEQVR4AWP4DwWfoGCgBGAMmMQACQAADMz4gbvL16sAAAAASUVORK5CYII=) #fff repeat;
+
+}
+
+#mod___body________ .mod___box________.w80 { width: 80%; }
+#mod___body________ .mod___box________.w75 { width: 75%; }
+#mod___body________ .mod___box________.w66 { width: 66.666%; }
+#mod___body________ .mod___box________.w60 { width: 60%; }
+#mod___body________ .mod___box________.w50 { width: 50%; }
+#mod___body________ .mod___box________.w40 { width: 40%; }
+#mod___body________ .mod___box________.w33 { width: 33.333%; }
+#mod___body________ .mod___box________.w25 { width: 25%; }
+#mod___body________ .mod___box________.w20 { width: 20%; }
+
+#mod___body________ .mod___group________.collapsed,
+#mod___body________ .mod___box________.collapsed {
+  height: 32px;
+  padding-bottom: 0;
+}
+
+#mod___body________ .mod___group________ .mod___box________ {}
+
+#mod___body________ .mod___group________ > dt,
+#mod___body________ .mod___box________ > dt {
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+
+#mod___body________ .mod___box________ > dd {
+  padding: 20px;
+  margin: 0;
+}
+
+span.mod___btn________ {
+  float: right;
+  padding: 2px 6px 3px 6px;
+  margin:0 0 0 3px;
+  background: #2c3e50;
+  border-radius: 2px;
+  cursor:pointer;
+
+  font: 400 11px/1.0em 'Inconsolata', sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+span.mod___btn________.cola {
+  background: #d35400;
+}
+
+span.mod___btn________.colb {
+  background: #16a085;
+}
+
+span.mod___btn________.colc {
+  background: #c0392b;
+}
+
+span.mod___btn___main___expand________,
+span.mod___btn___main___zoom50________{
+  float: left;
+  padding: 2px 6px 3px 6px;
+  margin:0 8px 8px 0;
+  background: #000;
+  border-radius: 2px;
+  cursor:pointer;
+
+  font: 400 11px/1.0em 'Inconsolata', sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+span.mod___btn___main________:hover,
+span.mod___btn________:hover {
+  background: #000;
+  color: #fff;
+  text-decoration: underline;
+}
+
+#mod___info________ {
+  width: 50%;
+  height: 100%;
+  position: fixed;
+  padding: 20px;
+  left: 0;
+  top: 0;
+  overflow: auto;
+  display:none;
+  border-right: 1px solid #ccc;
+
+  background: rgba(240,240,240,0.95);
+  color: #000;
+  z-index: 9999;
+}
+
+#mod___code________ {
+  width: 60%;
+  height: 100%;
+  position: fixed;
+  margin: 0;
+  padding: 20px 12% 20px 20px;
+  right: -10%;
+  top: 0;
+  overflow: auto;
+  border-radius: 0 !important;
+  display:none;
+
+  background: rgba(0,0,0,0.85);
+  color: #fff;
+  z-index: 9999;
+}
+
+#mod___clipboard________ {
+  display: none;
+  position: fixed;
+  width: 250px;
+  top: -8px;
+  right: 32px;
+  padding: 16px;
+  border-radius: 4px;
+
+  font: 400 11px/1.0em 'Inconsolata', sans-serif;
+  color: #ccc;
+  background: #000;
+
+}
+
+#mod___clipboard________ b {
+  color: #fff;
+}
+
+#mod___clipboard________ > textarea {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #ccc;
+  margin-top: 8px;
+  border-radius: 2px;
+  background: #fff;
+  font: 400 10px/1.0em 'Inconsolata', sans-serif;
+  resize: none;
+}
+
+.mod___toolbar________ {
+  width: 100%;
+  height: 33px;
+  background: #f0f0f0;
+  border-bottom: 1px solid #ccc;
+  clear: both;
+  margin: 0;
+  padding: 7px 6px 8px 8px;
+  overflow: hidden;
+}
+
+.mod___toolbar___title________ {
+  display: inline-block;
+  float: left;
+  margin-top: -2px;
+  font: 400 13px/1.0em 'Inconsolata', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  cursor: pointer;
+}
+
+.mod_group________ .mod___toolbar___title________ {
+  font-weight: 700 !important;
+}
+
+#mod___body________ > header {
+  display: block;
+  width: 100%;
+  margin-top: 16px;
+  float: left;
+  clear: both;
+}
+
+#mod___body________ > header > h1 {
+  font: 700 15px/1.0em 'Inconsolata', sans-serif;
+  margin: 0;
+  padding: 2px 8px 2px 0;
+  /*background: #666;*/
+  color: #333;
+}
+
+.mod___group________ > .mod___toolbar________ {
+  background: transparent;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Zoom 50% style -------------------------------- */
+body#mod___body________.mod___body___zomm50________ .mod___box________{
+  width: 49.5%;
+  margin: 0.25%;
+}
+
+body#mod___body________.mod___body___zomm50________ .mod___box________ > dd {
+  zoom:0.5;
+  -moz-transform: scale(0.5);
+}
+
+body#mod___body________.mod___body___zomm50________ > header > h1{
+  width: 100%;
+}
